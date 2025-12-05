@@ -7,11 +7,11 @@ export default function Home() {
       className="min-h-screen bg-cover bg-center bg-no-repeat relative"
       style={{ backgroundImage: "url('/ken.png')" }}
     >
-        <Link href="/">
-        <button className="fixed top-4 left-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-400 transition">
-          Main Page
-        </button>
-      </Link>
+        <Link href="/dashboard">
+                <button className="fixed top-4 left-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-400 transition">
+                 Back
+                </button>
+            </Link>
       
       <section className="py-10">
         <h1 className="flex justify-center items-center text-5xl font-bold mb-4 text-black">

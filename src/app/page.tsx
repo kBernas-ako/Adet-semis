@@ -9,9 +9,9 @@ export default function Home() {
 
       <h1 className="font-bold italic text-9x1 mb-10">Welcome to my page!</h1>
 
-      <Link href="/home">
+      <Link href="/login">
         <button className="text-black px-10 py-5 bg-blue-700 text-white rounded-full margin- hover:bg-blue-400 transition"
-        >press me</button>
+        >Click to log in</button>
       </Link>
 
     </div>
