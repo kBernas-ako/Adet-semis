@@ -36,6 +36,12 @@ export default function DashboardHome() {
                 >
                     Visit My Page!
                 </Link>
+                <Link
+                    href="/posdash"
+                    className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded shadow"
+                >
+                    Positions
+                </Link>
             </div>
 
             {token && (
