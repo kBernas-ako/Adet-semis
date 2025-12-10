@@ -25,7 +25,7 @@ export default function DashboardHome() {
     }
 
     return (
-        <div className="min-h-screen bg-[steelblue] text-white p-6 flex flex-col">
+        <div className="min-h-screen bg-gradient-to-b from-[#355C7D] to-[#6C5B7B] to-[#C06C84] text-white p-6 flex flex-col">
             <h2 className="text-3xl font-bold mb-2 drop-shadow-lg">Dashboard</h2>
             <h3 className="text-2xl font-semibold mb-2 drop-shadow-lg">Welcome, {username}</h3>
 

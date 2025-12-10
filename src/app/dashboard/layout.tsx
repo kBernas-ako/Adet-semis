@@ -21,9 +21,9 @@ export default function DashboardLayout({children}:{
     }
     
     return (
-        <div className="p-6">
+        <div className="bg-[#355C7D]">
 
-            <header className="flex justify-between items-center mb-6">
+            <header className="flex justify-between items-center"> 
                 <Button variant="destructive" onClick={handleLogout}>Logout</Button>
             </header>
 

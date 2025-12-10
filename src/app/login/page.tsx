@@ -35,13 +35,13 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="h-screen flex items-center justify-center bg-[steelblue] p-4">
+    <div className="h-screen flex items-center justify-center bg-gradient-to-b from-[#355C7D] to-[#6C5B7B] to-[#C06C84] p-4">
       
       <button
         onClick={() => router.push("/")}
         className="absolute top-4 left-4 text-white bg-blue-900 hover:bg-blue-950 px-3 py-1 rounded shadow"
       >
-        ← Back
+        Back
       </button>
 
       <Card className="w-full max-w-sm p-6 shadow-xl rounded-2xl bg-white/90 backdrop-blur-sm border border-blue-200">

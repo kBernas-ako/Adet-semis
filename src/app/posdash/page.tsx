@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { useRouter } from 'next/navigation';
 import { API_BASE } from '@/lib/config';
+import Link from "next/link";
 
 interface Position {
     position_id?: number;
@@ -159,11 +160,16 @@ export default function DashboardPage() {
     }
 
     return (
-        <div className="min-h-screen bg-slate-50 p-6">
+        <div className="min-h-screen bg-gradient-to-b from-[#355C7D] to-[#6C5B7B] to-[#C06C84] text-black p-6 flex flex-col">
+            <Link href="/dashboard">
+                <button className="fixed top-4 left-4 px-4 py-2 bg-[black] text-white rounded hover:bg-[gray] transition">
+                 Back
+                </button>
+                 </Link>
             <div className="max-w-4xl mx-auto">
-
+        
                 <header className="flex items-center justify-between mb-6">
-                    <h1 className="text-2xl font-bold">Positions Dashboard</h1>
+                    <h1 className="text-2xl font-bold italic text-white">Users Position Dashboard</h1>
                     <div className="flex items-center gap-3">
                         <Button variant="outline" onClick={() => fetchPositions()}>Refresh</Button>
                         <Button variant="destructive" onClick={handleLogout}>Logout</Button>
@@ -208,8 +214,8 @@ export default function DashboardPage() {
                 </Card>
 
                 <section>
-                    <h2 className="text-lg font-semibold mb-2">
-                        Positions List {loading && '(loading...)'}
+                    <h2 className="text-lg text-white font-semibold mb-2">
+                        Users List {loading && '(loading...)'}
                     </h2>
 
                     <div className="overflow-x-auto bg-white rounded shadow">
@@ -230,7 +236,7 @@ export default function DashboardPage() {
                                             colSpan={4}
                                             className="px-4 py-6 text-center text-sm text-slate-500"
                                         >
-                                            No positions found.
+                                            No User found.
                                         </td>
                                     </tr>
                                 )}
